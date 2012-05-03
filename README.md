@@ -12,6 +12,6 @@ så kan dette funke til noen formål ?
 Eirik Stavelin, april 2012
 
 
-* se
+'* se
 - http://fnielsen.posterous.com/afinn-a-new-word-list-for-sentiment-analysis
 - http://fnielsen.posterous.com/tag/afinn
