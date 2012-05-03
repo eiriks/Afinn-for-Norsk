@@ -1,0 +1,4 @@
+Afinn-for-Norsk
+===============
+
+test
