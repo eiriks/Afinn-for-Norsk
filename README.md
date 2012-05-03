@@ -13,5 +13,5 @@ Eirik Stavelin, april 2012
 
 
 * se
-http://fnielsen.posterous.com/afinn-a-new-word-list-for-sentiment-analysis
-http://fnielsen.posterous.com/tag/afinn
+- http://fnielsen.posterous.com/afinn-a-new-word-list-for-sentiment-analysis
+- http://fnielsen.posterous.com/tag/afinn
