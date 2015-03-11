@@ -753,6 +753,8 @@ sult	-2
 hysteri	-3
 vekst	2
 idiot	-3
+idioter	-3
+idiotisk	-3
 idiotiske	-3
 uvitenhet	-2
 ignorere	-1
@@ -1546,7 +1548,7 @@ oppmuntret	2
 fint	3
 liker 	3
 god	2
-kjekt	2 
+kjekt	2
 kjekk	2
 kjekke	2
 hjelpsom	1
