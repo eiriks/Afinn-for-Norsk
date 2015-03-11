@@ -13,7 +13,7 @@ skamløs	-2
 kødd	-2
 null	-1
 :-)	2
-:)	-5
+:)	2
 (-:	2
 (:	2
 B-)	2
@@ -901,12 +901,12 @@ kjærlighet	3
 herlige	3
 lavest	-1
 hell	3
-lunatic	-3
+hellvete	3
+sinnsyk	-3
 sinnssyke	-3
 lurer	-1
-lurer	-1
-lurer	-1
 gale	-3
+galt	-3
 gjort opp	-1
 madly	-3
 galskap	-3
