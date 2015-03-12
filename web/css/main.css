@@ -1,0 +1,26 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.media-body h4 {margin-top: 15px;}
+.url {color: gray; font-size: 10px; float:right;}
+.categories li {
+    display: inline;
+    padding-right: 5px;
+}
+.media-body p {
+    width:75%;
+}
+.media-body .lang_rater {
+    width:25%;
+    float:right;
+}
+
+.current_focus {
+/*    color: red;*/
+    border-left: 1px dashed green;
+    min-height: 200px;
+}
+/*#rating_wrapper div:first-of-type {
+    color:red;
+}*/

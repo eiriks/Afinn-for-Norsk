@@ -44,9 +44,9 @@ for line in codecs.open('./norsk.txt', 'r', 'utf-8-sig'):
 
 def sentiment(text):
     """
-Returns a float for sentiment strength based on the input text.
-Positive values are positive valence, negative value are negative valence.
-"""
+    Returns a float for sentiment strength based on the input text.
+    Positive values are positive valence, negative value are negative valence.
+    """
     #words = pattern_split.split(text.lower())
 
     # tester ulike tokenizers
@@ -59,8 +59,12 @@ Positive values are positive valence, negative value are negative valence.
 
     # print text
     # print words2
+    # print "\t"+" ".join(words2)
     # print words3
+    # print "\t"+" ".join(words3)
     # print words4
+    # print "\t"+" ".join(words4)
+    # print "*"*10
 
     sentiments = map(lambda word: finn.get(word, 0), words4)
     if sentiments:
@@ -109,30 +113,32 @@ if __name__ == '__main__':
     # text = "det skader ikke å gå planken, men det kan være uheldig."
     # print("%6.2f %s" % (sentiment(text), text))
 
-    text = "statan i helvete dette er det kipeste jeg kan faenmag tenke på"
-    print("%6.2f %s" % (sentiment(text), text))
+    # text = "statan i helvete dette er det kipeste jeg kan faenmag tenke på"
+    # print("%6.2f %s" % (sentiment(text), text))
+    #
+    # text = "dette er fantastisk, jeg gleder meg over framgangen vi oppnår her"
+    # print("%6.2f %s" % (sentiment(text), text))
+    #
+    # text = "Eirik er dritkul"
+    # print("%6.2f %s" % (sentiment(text), text))
+    #
+    # text = "Eirik er dritkul :("
+    # print("%6.2f %s" % (sentiment(text), text))
+    #
+    # text = "@Trinesg var streng med rette i dag. Bra! #aktuelt"
+    # print("%6.2f %s" % (sentiment(text), text))
+    #
+    # text = "@eidem Nei. At det er frivillig, og kan kreves slettet til enhver tid, hjelper. Men målet bør være null lagring, jf målet i EU-rett før #dld"
+    # print("%6.2f %s" % (sentiment(text), text))
+    #
 
-    text = "dette er fantastisk, jeg gleder meg over framgangen vi oppnår her"
-    print("%6.2f %s" % (sentiment(text), text))
+    # text = """Dokumentasjonen NRK fremlegger bekrefter så vidt vi kan se at dette produktet holder seg innenfor myndighetenes grenseverdier, noe som er i samsvar med dokumentasjonen vi har på dette produktet. Vi vil fase ut dette produktet og erstatte det med et PFOA-fritt alternativ av like høy kvalitet."""
+    # print("%6.2f %s" % (sentiment(text), text))
+    #
+    # text = """Det er morsomt at de snille "humanister" nu reagerer på overvåkningstjenestenhs aktiviteter. "Humanistene" glemmer at vi har en aktiv og effektiv mafia i arbeid. Eksempelvis dreper latviske bander for stykkpris kr 80.000,-, og de slår da i hjel offeret med balltre. Mafiaen vil gjerne eksponere og bekjempe PST, og får god hjelp av snillister og spesielle advokater. Kanskje "snllistene" skal stikke fingeren i jorden og erkjenne hvordan samfunnet har blitt etter en ukontrollert import fra syd-øst? Det er f.eks. dessverre et faktum at mye kriminalitet organsieres via det "humane tiggermiljø". De nyttige idioter vil alltid bistå de destruktive krefter!"""
+    # print("%6.2f %s" % (sentiment(text), text))
+    #
 
-    text = "Eirik er dritkul"
-    print("%6.2f %s" % (sentiment(text), text))
-
-    text = "Eirik er dritkul :("
-    print("%6.2f %s" % (sentiment(text), text))
-
-    text = "@Trinesg var streng med rette i dag. Bra! #aktuelt"
-    print("%6.2f %s" % (sentiment(text), text))
-
-    text = "@eidem Nei. At det er frivillig, og kan kreves slettet til enhver tid, hjelper. Men målet bør være null lagring, jf målet i EU-rett før #dld"
-    print("%6.2f %s" % (sentiment(text), text))
-
-
-    text = """Dokumentasjonen NRK fremlegger bekrefter så vidt vi kan se at dette produktet holder seg innenfor myndighetenes grenseverdier, noe som er i samsvar med dokumentasjonen vi har på dette produktet. Vi vil fase ut dette produktet og erstatte det med et PFOA-fritt alternativ av like høy kvalitet."""
-    print("%6.2f %s" % (sentiment(text), text))
-
-    text = """Det er morsomt at de snille "humanister" nu reagerer på overvåkningstjenestenhs aktiviteter. "Humanistene" glemmer at vi har en aktiv og effektiv mafia i arbeid. Eksempelvis dreper latviske bander for stykkpris kr 80.000,-, og de slår da i hjel offeret med balltre. Mafiaen vil gjerne eksponere og bekjempe PST, og får god hjelp av snillister og spesielle advokater. Kanskje "snllistene" skal stikke fingeren i jorden og erkjenne hvordan samfunnet har blitt etter en ukontrollert import fra syd-øst? Det er f.eks. dessverre et faktum at mye kriminalitet organsieres via det "humane tiggermiljø". De nyttige idioter vil alltid bistå de destruktive krefter!"""
-    print("%6.2f %s" % (sentiment(text), text))
     # text = """
     # Klima- og forureiningsdirektoratet rår Miljøverndepartementet til å utsetja avgjera om fjordeponi  i Førdefjorden i eit år.
     # Betre utgreiing først
