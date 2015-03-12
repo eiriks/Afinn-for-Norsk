@@ -20,6 +20,7 @@ Eirik Stavelin, april 2012
 
 ## todo
 - må la brukere legge til egne ord
+- tell, og gi bruker feedback på framgang (Gamification?)
 
 ## GUI
 AFINN listen min er automatisk oversatt av google, noe som ikke er optimalt.
