@@ -21,6 +21,10 @@ Eirik Stavelin, april 2012
 ## todo
 - må la brukere legge til egne ord
 
+## GUI
+AFINN listen min er automatisk oversatt av google, noe som ikke er optimalt.
+For å la mennesker manuelt gå gjennom liten finnes er GUI på http://stavelin.com/sentiment/
+
 # Under finner du readme fra versjon av orginalprosjektet jeg fant ordlisten på:
 AFINN is a list of English words rated for valence with an integer
 between minus five (negative) and plus five (positive). The words have
