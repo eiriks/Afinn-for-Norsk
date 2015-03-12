@@ -18,6 +18,8 @@ Eirik Stavelin, april 2012
 - http://fnielsen.posterous.com/tag/afinn
 
 
+## todo
+- må la brukere legge til egne ord
 
 # Under finner du readme fra versjon av orginalprosjektet jeg fant ordlisten på:
 AFINN is a list of English words rated for valence with an integer
