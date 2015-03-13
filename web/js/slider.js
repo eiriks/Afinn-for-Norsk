@@ -55,6 +55,9 @@ $(document).ready(function () {
             $("#loginBtn").text("Logg ut, "+ localStorage.getItem("username")).toggleClass("btn-danger");
             $("#username").hide();
             $("#confermButn").show();
+            localStorage.setItem("counter", "0");
+            $("#teller").show();
+            $("#rater").focus();
         } else {
             console.info("vi logger ut");
             localStorage.removeItem("username");
@@ -62,11 +65,13 @@ $(document).ready(function () {
             $("#loginBtn").text("Logg inn").toggleClass("btn-danger");
             $("#username").show();
             $("#confermButn").hide()
+            localStorage.setItem("counter", "0");
         }
         // updateScreen();
     });
 
-    $("#skip").click(function(){
+    $("#skip").click(function(e){
+        e.preventDefault();
         // hide current word
         $("."+$("#activeWord").text()).hide();
         // pull out the next
@@ -75,7 +80,17 @@ $(document).ready(function () {
         modifyInputs();
     });
 
-    $("#confermButn").click(function(){
+    $("#addWordBtn").click(function(e){
+        e.preventDefault();
+        // put word on stand
+        $("#activeWord").text($("#addWordInpt").val());
+        $("#rater").val(0);         // set to 0, let user descide 
+        $("#addWordInpt").val(""); // set to blank
+        modifyInputs();
+    });
+
+    $("#confermButn").click(function(e){
+        e.preventDefault();
         // sjekk 
         var rater_data = {};
         rater_data['rater'] = localStorage.getItem("username");
@@ -95,6 +110,12 @@ $(document).ready(function () {
                 $("#activeWord").text($(".wordsoup span:visible:first").text()); // :first-child:not(:hidden)
                 $("#rater").val($(".wordsoup span:visible:first").data("target"));
                 modifyInputs();
+                
+                console.log(localStorage.getItem('counter'));
+                var new_counter =  parseInt(localStorage.getItem('counter')) + 1
+                console.info(typeof new_counter, new_counter.length, new_counter);
+                localStorage.setItem("counter", String(new_counter));
+                $("#teller").text(String(new_counter));
                 //$("div#" +rater_data['text_id']).hide(); updateScreen();
             } //,
           //dataType: dataType
@@ -151,12 +172,16 @@ function updateScreen() {
     if (localStorage.getItem("username") === null){ 
         //$("#myModal").modal('show');
         $("#confermButn").hide();
+        $("#teller").hide();
+        $("#username").focus();
     } else {
         console.info("vi er logget in");
     //        $("#loginBtn").text("Logg ut: "+localStorage.getItem("username"));
         $(".jumbotron").hide();
         $("#loginBtn").text("Logg ut, "+ localStorage.getItem("username")).toggleClass("btn-danger").toggleClass("btn-success");
         $("#username").hide();
+        $("#teller").show();
+        $("#rater").focus();
     }
 }
 

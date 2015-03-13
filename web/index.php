@@ -116,8 +116,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a id="headline" class="navbar-brand" href="#">ContentCoder</a>
+            <a id="headline" class="navbar-brand" href="#">SentimentCoder <span id="teller" class="label label-success">0</span></a>
+
+        <div class="input-group" style="width:200px; padding-top:8px; float:left;">
+          <input id="addWordInpt" type="text" class="form-control" placeholder="Nytt ord">
+          <span class="input-group-btn">
+            <button id="addWordBtn" class="btn btn-default" type="button">Legg til ord!</button>
+          </span>
+        </div><!-- /input-group -->
+
         </div>
+
+
+
         <div class="navbar-collapse collapse">
             <form id="login" class="navbar-form navbar-right" role="form" novalidate><!--  -->
                 <div class="form-group">
@@ -175,6 +186,7 @@
 
 <div class="container">
     <!-- Example row of columns -->
+    <form>
     <div class="row">
         <div class="col-md-4">
         </div>
@@ -185,11 +197,11 @@
         </div>
 
         <div class="col-md-12">
-            <form>
+            
 <!--             <label for="rater">Rating</label> -->
-            <input id="rater" type="range" min="-5" max="5" step="1" value="0" />
+            <input id="rater" type="range" min="-5" max="5" step="1" value="0" autofocus />
             <output for="rater" onforminput="value = rater.valueAsNumber;"></output>
-            </form>
+            
         </div>
     </div>
 
@@ -201,10 +213,10 @@
             <button id="confermButn" type="submit" class="btn btn-success btn-lg">Slik er det !</button>
         </div>
         <div class="col-md-4">
-                    <button id="skip" type="submit" class="btn btn-default pull-right">Skipp ord</button>
+                  <button id="skip" type="button" class="btn btn-default pull-right">Skipp ord</button>
         </div>
     </div>
-
+    </form>
 
 <hr />
 
